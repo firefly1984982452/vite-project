@@ -7,6 +7,10 @@
       <router-link to="/b">
         <div class="item">菜单2</div>
       </router-link>
+      <router-link to="/table">
+        <div class="item">table</div>
+      </router-link>
+      
     </div>
     <div class="right-page">
       <router-view />

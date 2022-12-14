@@ -21,6 +21,12 @@ const routes = [
         name: 'b',
         component: () => import('../views/b/index.vue'),
         meta: { title: '实例管理xx', keepAlive: true },
+      },
+      {
+        path: '/table',
+        name: 'table',
+        component: () => import('../views/table/index.vue'),
+        meta: { title: 'table', keepAlive: true },
       }
     ]
   }
