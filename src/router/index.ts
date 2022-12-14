@@ -8,19 +8,19 @@ const routes = [
     children: [
       {
         path: '',
-        redirect: 'a'
+        redirect: 'table'
       },
       {
-        path: '/a',
-        name: 'a',
-        component: () => import('../views/a/index.vue'),
-        meta: { title: '实例管理', keepAlive: true },
+        path: '/elementUI',
+        name: 'elementUI',
+        component: () => import('../views/elementUI/index.vue'),
+        meta: { title: 'elementUI', keepAlive: true },
       },
       {
-        path: '/b',
-        name: 'b',
-        component: () => import('../views/b/index.vue'),
-        meta: { title: '实例管理xx', keepAlive: true },
+        path: '/echarts',
+        name: 'echarts',
+        component: () => import('../views/echarts/index.vue'),
+        meta: { title: 'echarts', keepAlive: true },
       },
       {
         path: '/table',

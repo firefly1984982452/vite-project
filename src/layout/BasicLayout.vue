@@ -1,11 +1,11 @@
 <template>
   <div class="page">
     <div class="left-menu">
-      <router-link to="/a">
-        <div class="item">菜单1</div>
+      <router-link to="/elementUI">
+        <div class="item">elementUI</div>
       </router-link>
-      <router-link to="/b">
-        <div class="item">菜单2</div>
+      <router-link to="/echarts">
+        <div class="item">echarts</div>
       </router-link>
       <router-link to="/table">
         <div class="item">table</div>
