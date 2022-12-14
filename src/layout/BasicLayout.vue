@@ -40,6 +40,8 @@ let menuList = router.options.routes[0].children || []
       align-items: center;
       justify-content: center;
       margin: 0 0 20px 0;
+      color: #333;
+      font-size: 14px;
     }
   }
 
