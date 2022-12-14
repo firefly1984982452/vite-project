@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@element-plus/icons-vue': ^2.0.10
+  '@types/node': ^18.11.15
   '@vitejs/plugin-vue': ^4.0.0
   axios: ^1.2.1
   echarts: ^5.4.1
@@ -23,9 +24,10 @@ dependencies:
   vue-router: 4.1.6_vue@3.2.45
 
 devDependencies:
+  '@types/node': 18.11.15
   '@vitejs/plugin-vue': 4.0.0_vite@4.0.1+vue@3.2.45
   typescript: 4.9.4
-  vite: 4.0.1_sass@1.56.2
+  vite: 4.0.1_o2iixvyklpce477lkpnahelma4
   vue-tsc: 1.0.13_typescript@4.9.4
 
 packages:
@@ -288,6 +290,10 @@ packages:
     resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: false
 
+  /@types/node/18.11.15:
+    resolution: {integrity: sha512-VkhBbVo2+2oozlkdHXLrb3zjsRkpdnaU2bXmX8Wgle3PUi569eLRaHGlgETQHR7lLL1w7GiG3h9SnePhxNDecw==}
+    dev: true
+
   /@types/web-bluetooth/0.0.16:
     resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
     dev: false
@@ -299,7 +305,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.0.1_sass@1.56.2
+      vite: 4.0.1_o2iixvyklpce477lkpnahelma4
       vue: 3.2.45
     dev: true
 
@@ -836,7 +842,7 @@ packages:
     hasBin: true
     dev: true
 
-  /vite/4.0.1_sass@1.56.2:
+  /vite/4.0.1_o2iixvyklpce477lkpnahelma4:
     resolution: {integrity: sha512-kZQPzbDau35iWOhy3CpkrRC7It+HIHtulAzBhMqzGHKRf/4+vmh8rPDDdv98SWQrFWo6//3ozwsRmwQIPZsK9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -861,6 +867,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.11.15
       esbuild: 0.16.6
       postcss: 8.4.20
       resolve: 1.22.1

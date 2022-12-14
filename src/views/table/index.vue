@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
-import { getBrokerList } from '../../api/message'
+import { getBrokerList } from '@/api/message'
 
 /** 获取表格数据 **/
 const tableData = ref<Array<any>>([])

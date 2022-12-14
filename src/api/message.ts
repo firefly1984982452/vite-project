@@ -1,4 +1,4 @@
-import request from '../utils/request';
+import request from '@/utils/request';
 const MSG_URL = '/msg-adaptor-cube-api/message-engine/';
 
 export const getBrokerList = (data: any) => {

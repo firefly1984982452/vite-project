@@ -20,7 +20,7 @@ provide("echarts", echarts);
   header {
     width: 100%;
     height: 30px;
-    background: url('./assets/header.png') no-repeat;
+    background: url('@/assets/header.png') no-repeat;
     background-size: 100% 100%;
   }
 
