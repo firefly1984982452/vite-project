@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import router from './router/index'
 import App from './App.vue'
 import './style.css'
 import ElementPlus from 'element-plus'
@@ -12,4 +13,5 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 }
 app.config.globalProperties.$echarts = echarts
 app.use(ElementPlus)
+app.use(router)
 app.mount('#app')
