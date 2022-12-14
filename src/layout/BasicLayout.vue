@@ -10,6 +10,9 @@
       <router-link to="/table">
         <div class="item">table</div>
       </router-link>
+      <router-link to="/api">
+        <div class="item">api</div>
+      </router-link>
       
     </div>
     <div class="right-page">

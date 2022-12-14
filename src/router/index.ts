@@ -23,6 +23,12 @@ const routes = [
         name: 'table',
         component: () => import('@/views/table/index.vue'),
         meta: { title: 'table', keepAlive: true },
+      },
+      {
+        path: '/api',
+        name: 'api',
+        component: () => import('@/views/api/index.vue'),
+        meta: { title: 'api', keepAlive: true },
       }
     ]
   }

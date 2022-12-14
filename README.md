@@ -16,4 +16,5 @@ yarn build-only
 - echarts
 - element-plus
 - sass
+- axios
 - 左侧菜单右侧内容样式
