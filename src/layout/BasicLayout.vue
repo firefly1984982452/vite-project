@@ -1,8 +1,12 @@
 <template>
   <div class="page">
     <div class="left-menu">
-        <el-tag><router-link to="/a">去文件一</router-link></el-tag>
-        <el-tag><router-link to="/b">去文件二</router-link></el-tag>
+      <router-link to="/a">
+        <div class="item">菜单1</div>
+      </router-link>
+      <router-link to="/b">
+        <div class="item">菜单2</div>
+      </router-link>
     </div>
     <div class="right-page">
       <router-view />
@@ -17,12 +21,29 @@
 
   .left-menu {
     width: 100px;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .4);
+    height: 100%;
+    background-color: #fff;
+    border-right: 1px solid #eee;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .item {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 20px 0;
+    }
   }
 
   .right-page {
     flex: 1;
+    
   }
 }
 </style>

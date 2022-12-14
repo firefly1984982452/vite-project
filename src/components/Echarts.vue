@@ -74,12 +74,12 @@ export default defineComponent({
  
 <style scoped>
 #main {
-  min-width: 31.25rem;
-  min-height: 31.25rem;
+  min-width: 200px;
+  min-height:200px;
 }
  
 #maychar {
-  max-height: 500px;
-  height: 500px;
+  max-height: 300px;
+  height: 300px;
 }
 </style>
