@@ -8,9 +8,9 @@ export const getBrokerList = (data: any) => {
     data
   })
 }
-export const hotlist = () => {
+export const history = () => {
   return request({
-    url: 'https://qqlykm.cn/api/hotlist/get?key=miN6QvGlqLQRe9TexZEFY7JZ9Q&type=baidu',
+    url: 'https://qqlykm.cn/api/free/history/get',
     method: 'get',
   })
 }

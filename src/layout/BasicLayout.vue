@@ -1,25 +1,20 @@
 <template>
   <div class="page">
     <div class="left-menu">
-      <router-link to="/elementUI">
-        <div class="item">elementUI</div>
+      <router-link :to="item.path" v-for="(item,index) in menuList" :key="index">
+        <div class="item">{{ item.name }}</div>
       </router-link>
-      <router-link to="/echarts">
-        <div class="item">echarts</div>
-      </router-link>
-      <router-link to="/table">
-        <div class="item">table</div>
-      </router-link>
-      <router-link to="/api">
-        <div class="item">api</div>
-      </router-link>
-      
     </div>
     <div class="right-page">
       <router-view />
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
+const router = useRouter()
+let menuList = router.options.routes[0].children || []
+</script>
 
 <style scoped lang="scss">
 .page {
@@ -50,7 +45,7 @@
 
   .right-page {
     flex: 1;
-    
+
   }
 }
 </style>
