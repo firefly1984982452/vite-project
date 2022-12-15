@@ -1,27 +1,20 @@
 <script setup lang="ts">
-import {
-  Check,
-  Edit,
-  Search,
-} from '@element-plus/icons-vue'
-import { ref } from 'vue'
-
-
-const count = ref(0)
+import iconVue from './components/icon.vue';
 </script>
 
 <template>
-  <el-icon :size="20">
-    <Edit />
-  </el-icon>
-  <el-button type="primary">
-    <el-icon style="vertical-align: middle">
-      <Search />
-    </el-icon>
-    <span style="vertical-align: middle"> Search </span>
-  </el-button>
-  <el-button type="primary" :icon="Check">Search</el-button>
+  <div class="flex">
+    <ul>
+      <li>icon</li>
+      <li>button</li>
+      <li>table</li>
+    </ul>
+    <div class="page">
+      <iconVue />
+    </div>
+  </div>
 </template>
 
 <style scoped>
+
 </style>
