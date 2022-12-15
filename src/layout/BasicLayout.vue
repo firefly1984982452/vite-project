@@ -47,7 +47,7 @@ let menuList = router.options.routes[0].children || []
 
   .right-page {
     flex: 1;
-
+    width: calc(100vw - 100px);
   }
 }
 </style>

@@ -1,5 +1,7 @@
 import request from '@/utils/request';
 const MSG_URL = '/msg-adaptor-cube-api/message-engine/';
+const qqlykm = 'https://qqlykm.cn/api/'
+const key = 'miN6QvGlqLQRe9TexZEFY7JZ9Q'
 
 export const getBrokerList = (data: any) => {
   return request({
@@ -10,8 +12,21 @@ export const getBrokerList = (data: any) => {
 }
 export const history = () => {
   return request({
-    url: 'https://qqlykm.cn/api/free/history/get',
+    url: qqlykm + 'free/history/get',
     method: 'get',
   })
 }
 
+export const hotlist = (type:string) => {
+  return request({
+    url: qqlykm + `hotlist/get?key=${key}&type=${type}`,
+    method: 'get',
+  })
+}
+
+export const weather = (city:string) => {
+  return request({
+    url: qqlykm + `free/weather/get?key=${key}&city=${city}`,
+    method: 'get',
+  })
+}

@@ -10,25 +10,31 @@ const routes = [
         path: '/elementUI',
         name: 'elementUI',
         component: () => import('@/views/elementUI/index.vue'),
-        meta: { title: 'elementUI', keepAlive: true },
+        meta: { title: 'elementUI' },
       },
       {
         path: '/echarts',
         name: 'echarts',
         component: () => import('@/views/echarts/index.vue'),
-        meta: { title: 'echarts', keepAlive: true },
+        meta: { title: 'echarts' },
       },
       {
         path: '/table',
         name: 'table',
         component: () => import('@/views/table/index.vue'),
-        meta: { title: 'table', keepAlive: true },
+        meta: { title: 'table' },
       },
       {
         path: '/api',
         name: 'api',
         component: () => import('@/views/api/index.vue'),
-        meta: { title: 'api', keepAlive: true },
+        meta: { title: 'api' },
+      },
+      {
+        path: '/hotlist',
+        name: 'hotlist',
+        component: () => import('@/views/hotlist/index.vue'),
+        meta: { title: 'hotlist' },
       }
     ]
   }
