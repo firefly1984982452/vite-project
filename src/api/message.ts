@@ -10,6 +10,7 @@ export const getBrokerList = (data: any) => {
     data
   })
 }
+
 export const history = () => {
   return request({
     url: qqlykm + 'free/history/get',
@@ -17,14 +18,14 @@ export const history = () => {
   })
 }
 
-export const hotlist = (type:string) => {
+export const hotlist = (type: string) => {
   return request({
     url: qqlykm + `hotlist/get?key=${key}&type=${type}`,
     method: 'get',
   })
 }
 
-export const weather = (city:string) => {
+export const weather = (city: string) => {
   return request({
     url: qqlykm + `free/weather/get?key=${key}&city=${city}`,
     method: 'get',

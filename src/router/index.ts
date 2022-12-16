@@ -7,34 +7,34 @@ const routes = [
     component: HomeView,
     children: [
       {
-        path: '/elementUI',
-        name: 'elementUI',
-        component: () => import('@/views/elementUI/index.vue'),
-        meta: { title: 'elementUI' },
+        path: '/element',
+        name: 'element',
+        component: () => import('@/views/element/index.vue'),
+        meta: { title: 'element', icon: 'ElementPlus' },
       },
       {
         path: '/echarts',
         name: 'echarts',
         component: () => import('@/views/echarts/index.vue'),
-        meta: { title: 'echarts' },
+        meta: { title: 'echarts', icon: 'PieChart'  },
       },
       {
         path: '/table',
         name: 'table',
         component: () => import('@/views/table/index.vue'),
-        meta: { title: 'table' },
+        meta: { title: 'table', icon: 'List'  },
       },
       {
         path: '/api',
         name: 'api',
         component: () => import('@/views/api/index.vue'),
-        meta: { title: 'api' },
+        meta: { title: 'api', icon: 'MagicStick'  },
       },
       {
         path: '/hotlist',
         name: 'hotlist',
         component: () => import('@/views/hotlist/index.vue'),
-        meta: { title: 'hotlist' },
+        meta: { title: 'hotlist', icon: 'Orange'  },
       }
     ]
   }

@@ -5,7 +5,7 @@ provide("echarts", echarts);
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" class="vue3-page">
     <header></header>
     <router-view class="page" />
   </div>

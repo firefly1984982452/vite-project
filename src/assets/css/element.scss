@@ -1,0 +1,11 @@
+.vue3-page {
+  .el-menu{
+    border-right: none;
+  }
+  .el-menu-item {
+    padding: 0!important;
+  }
+  .el-menu--vertical:not(.el-menu--collapse):not(.el-menu--popup-container) .el-menu-item{
+    padding-left: 0;
+  }
+}
