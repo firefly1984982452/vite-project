@@ -2,13 +2,13 @@
 import { ref, onMounted } from 'vue'
 import { hotlist } from '@/api/message'
 const value = ref('')
-let options = ref<Array<any>>([])
+let options = ref([])
 const getList = () => {
   hotlist('kgmusic').then(res => {
     const list = res.data.data
-    options = list.map((v: any,index:number) => {
+    options.value = list.map((v: any, index: number) => {
       return {
-        label: index+v.title,
+        label: index + v.title,
         value: v.title
       }
     })
