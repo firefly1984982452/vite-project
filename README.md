@@ -13,6 +13,7 @@ yarn build-only
 - vue3
 - typescript
 - vue-router
+- pinia
 - echarts
 - element-plus
 - sass

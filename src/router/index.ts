@@ -35,6 +35,12 @@ const routes = [
         name: 'hotlist',
         component: () => import('@/views/hotlist/index.vue'),
         meta: { title: 'hotlist', icon: 'Orange'  },
+      },
+      {
+        path: '/pinia',
+        name: 'pinia',
+        component: () => import('@/views/pinia/index.vue'),
+        meta: { title: 'pinia', icon: 'Grape'  },
       }
     ]
   }
